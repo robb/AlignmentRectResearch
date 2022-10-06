@@ -7,24 +7,22 @@ struct ButtonComparison: View {
                 Button {} label: {
                     Label("Copy", systemImage: "doc.on.doc")
                 }
-                .background(Color.blue.opacity(0.4))
 
                 Button {} label: {
                     Label("More", systemImage: "ellipsis")
                 }
-                .background(Color.red.opacity(0.4))
+                .tint(.red)
             }
 
             HStack {
                 ButtonView(label: "Copy", systemImage: "doc.on.doc")
                     .fixedSize()
-                    .background(Color.blue.opacity(0.4))
 
-                ButtonView(label: "More", systemImage: "ellipsis")
+                ButtonView(label: "More", systemImage: "ellipsis", tint: .red)
                     .fixedSize()
-                    .background(Color.red.opacity(0.4))
             }
         }
+        .buttonStyle(.borderedProminent)
     }
 }
 
@@ -33,17 +31,20 @@ struct ButtonView: UIViewRepresentable {
 
     var systemImage: String
 
+    var tint: UIColor?
+
     func makeUIView(context: Context) -> UIButton {
-        var config = UIButton.Configuration.plain()
+        var config = UIButton.Configuration.borderedProminent()
         config.title = label
         config.image = UIImage(systemName: systemImage)?.applyingSymbolConfiguration(.init(textStyle: .body))
-        config.imagePadding = 16
+        config.imagePadding = 8
+        config.preferredSymbolConfigurationForImage = .init(scale: .medium)
 
         return UIButton(configuration: config)
     }
 
     func updateUIView(_ button: UIButton, context: Context) {
-
+        button.tintColor = tint
     }
 }
 
