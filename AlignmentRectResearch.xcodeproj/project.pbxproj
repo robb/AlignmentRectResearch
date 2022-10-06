@@ -11,6 +11,7 @@
 		5448411328EE0CC600E2EA44 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448411228EE0CC600E2EA44 /* ContentView.swift */; };
 		5448411528EE0CC800E2EA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5448411428EE0CC800E2EA44 /* Assets.xcassets */; };
 		5448411828EE0CC800E2EA44 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5448411728EE0CC800E2EA44 /* Preview Assets.xcassets */; };
+		5448411F28EEC60100E2EA44 /* ButtonComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5448411E28EEC60100E2EA44 /* ButtonComparison.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5448411228EE0CC600E2EA44 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5448411428EE0CC800E2EA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5448411728EE0CC800E2EA44 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5448411E28EEC60100E2EA44 /* ButtonComparison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonComparison.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				5448411028EE0CC600E2EA44 /* AlignmentRectResearchApp.swift */,
 				5448411228EE0CC600E2EA44 /* ContentView.swift */,
+				5448411E28EEC60100E2EA44 /* ButtonComparison.swift */,
 				5448411428EE0CC800E2EA44 /* Assets.xcassets */,
 				5448411628EE0CC800E2EA44 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5448411328EE0CC600E2EA44 /* ContentView.swift in Sources */,
+				5448411F28EEC60100E2EA44 /* ButtonComparison.swift in Sources */,
 				5448411128EE0CC600E2EA44 /* AlignmentRectResearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
